@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig, devices } from '@playwright/test';
+import { trace } from 'console';
 
 
 const config =({
@@ -13,6 +14,8 @@ const config =({
     { use: {
     browserName: 'chromium',  
     headless: false,
+    screenshot: 'on',
+    trace:'on',
    
   } },
   ],
